@@ -41,7 +41,7 @@
                         <transformer
                                 implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                             <manifestEntries>
-                                <Main-Class>uk.co.alt236.apkcompare.app.Main</Main-Class>
+                                <Main-Class>uk.co.alt236.jacocoxmlparser.Main</Main-Class>
                             </manifestEntries>
                         </transformer>
                     </transformers>

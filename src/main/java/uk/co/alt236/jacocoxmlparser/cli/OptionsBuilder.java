@@ -38,8 +38,8 @@ public class OptionsBuilder {
 
     private Option createOptionFile() {
         final String desc = strings.getString("cli_cmd_file");
-        return Option.builder()
-                .longOpt(ARG_FILE)
+        return Option.builder(ARG_FILE)
+                .longOpt(ARG_FILE_LONG)
                 .hasArg()
                 .required(true)
                 .desc(desc)

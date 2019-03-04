@@ -11,9 +11,6 @@ import java.io.File;
 
 public class Main {
 
-//    private static final String FILE_NAME = "/home/alex/vcs/telegraph-android/banksyandroid/app/build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml";
-//
-
     private Main() {
         //NOOP
     }
