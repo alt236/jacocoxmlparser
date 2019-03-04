@@ -1,6 +1,7 @@
 package uk.co.alt236.jacocoxmlparser.printer;
 
 import com.jakewharton.fliptables.FlipTable;
+import uk.co.alt236.jacocoxmlparser.cli.CommandLineOptions;
 import uk.co.alt236.jacocoxmlparser.xml.Package;
 import uk.co.alt236.jacocoxmlparser.xml.Report;
 
@@ -8,13 +9,17 @@ import java.util.List;
 
 public class ReportPrinter {
 
-    public void print(Report report) {
+    public void print(CommandLineOptions options, Report report) {
 
         System.out.println("Jacoco Report for: " + report.getName());
 
-        packageStats(report);
-        packageGlobalStats(report);
+        if (options.isPringGlobalStats()) {
+            packageGlobalStats(report);
+        }
 
+        if (options.isPringPackageStats()) {
+            packageStats(report);
+        }
     }
 
     private void packageStats(Report report) {

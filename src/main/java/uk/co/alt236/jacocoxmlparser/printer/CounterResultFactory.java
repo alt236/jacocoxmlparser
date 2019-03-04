@@ -7,8 +7,8 @@ import java.util.stream.Collectors;
 
 class CounterResultFactory {
 
-    public static CounterResult getCounter(final List<Counter> counters,
-                                           final String name) {
+    static CounterResult getCounter(final List<Counter> counters,
+                                    final String name) {
         final List<Counter> filtered = counters
                 .stream()
                 .filter(counter -> counter.getType().equals(name))

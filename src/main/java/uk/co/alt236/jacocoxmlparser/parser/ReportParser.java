@@ -1,4 +1,4 @@
-package uk.co.alt236.jacocoxmlparser;
+package uk.co.alt236.jacocoxmlparser.parser;
 
 import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
