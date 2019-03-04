@@ -1,12 +1,10 @@
 package uk.co.alt236.jacocoxmlparser.printer;
 
 import com.jakewharton.fliptables.FlipTable;
-import uk.co.alt236.jacocoxmlparser.xml.Counter;
 import uk.co.alt236.jacocoxmlparser.xml.Package;
 import uk.co.alt236.jacocoxmlparser.xml.Report;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class ReportPrinter {
 
@@ -14,6 +12,12 @@ public class ReportPrinter {
 
         System.out.println("Jacoco Report for: " + report.getName());
 
+        packageStats(report);
+        packageGlobalStats(report);
+
+    }
+
+    private void packageStats(Report report) {
         final List<Package> packages = report.getPackages();
         packages.sort((o1, o2) -> o1.getName().compareToIgnoreCase(o2.getName()));
 
@@ -27,47 +31,40 @@ public class ReportPrinter {
             final String name = pack.getName();
             final String classCount = String.valueOf(pack.getClasses().size());
 
-            // Instruction Coverage
-            final Counter instructionCounter = getCounter(pack.getCounters(), "INSTRUCTION");
-            final String instructions = String.valueOf(instructionCounter.getTotal());
-            final String InstructionsCovered = String.valueOf(instructionCounter.getCovered());
-            final String instructionPercent = toPercentage(instructionCounter.getPercentage()) + "%";
-
-            // Branch Coverage
-            final Counter branchCounter = getCounter(pack.getCounters(), "BRANCH");
-            final String branches = String.valueOf(branchCounter.getTotal());
-            final String branchesCovered = String.valueOf(branchCounter.getCovered());
-            final String branchesPercent = toPercentage(branchCounter.getPercentage()) + "%";
-
+            final CounterResult instructions = CounterResultFactory.getCounter(pack.getCounters(), "INSTRUCTION");
+            final CounterResult branches = CounterResultFactory.getCounter(pack.getCounters(), "BRANCH");
 
             data[i] = new String[]{
                     name,
                     classCount,
-                    instructions,
-                    InstructionsCovered,
-                    instructionPercent,
-                    branches,
-                    branchesCovered,
-                    branchesPercent
+                    instructions.getItems(),
+                    instructions.getItemsCovered(),
+                    instructions.getItemsPercent(),
+                    branches.getItems(),
+                    branches.getItemsCovered(),
+                    branches.getItemsPercent()
             };
         }
-
 
         System.out.println(FlipTable.of(header, data));
     }
 
-    private String toPercentage(double amount) {
-        return String.format("%.0f", amount) + "%";
-    }
+    private void packageGlobalStats(Report report) {
+        final String[] header = {"Instructions", "Instr. Covered", "Instr. %", "Branches", "Branches Covered", "Branches %"};
+        final String[][] data = new String[1][header.length];
 
+        final CounterResult instructions = CounterResultFactory.getCounter(report.getCounters(), "INSTRUCTION");
+        final CounterResult branches = CounterResultFactory.getCounter(report.getCounters(), "BRANCH");
 
-    private Counter getCounter(final List<Counter> counters,
-                               final String name) {
-        final List<Counter> filtered = counters
-                .stream()
-                .filter(counter -> counter.getType().equals(name))
-                .collect(Collectors.toList());
+        data[0] = new String[]{
+                instructions.getItems(),
+                instructions.getItemsCovered(),
+                instructions.getItemsPercent(),
+                branches.getItems(),
+                branches.getItemsCovered(),
+                branches.getItemsPercent()
+        };
 
-        return filtered.isEmpty() ? null : filtered.get(0);
+        System.out.println(FlipTable.of(header, data));
     }
 }

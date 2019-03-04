@@ -34,7 +34,7 @@ public class Counter {
     }
 
     public double getPercentage() {
-        return (covered / getTotal()) * 100;
+        return (covered / (float) getTotal()) * 100;
     }
 
     @Override
