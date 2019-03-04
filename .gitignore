@@ -1,0 +1,10 @@
+/bin
+/gen
+local.properties
+.idea/
+lint.xml
+/.apt_generated
+/input/
+/out/
+/target/
+/test_output/
