@@ -33,6 +33,6 @@ class CounterResult {
     }
 
     private String toPercentage(double amount) {
-        return String.format("%.0f", amount) + "%";
+        return String.format("%.0f", Math.floor(amount)) + "%";
     }
 }
