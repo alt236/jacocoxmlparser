@@ -9,15 +9,27 @@ import java.util.List;
 
 public class ReportPrinter {
 
-    public void print(CommandLineOptions options, Report report) {
+    private final Colorizer colorizer;
+    private final boolean printGlobalStats;
+    private final boolean printPackageStats;
+
+    public ReportPrinter(CommandLineOptions options) {
+        colorizer = new Colorizer(options.isColorise());
+        printGlobalStats = options.isPrintGlobalStats();
+        printPackageStats = options.isPrintPackageStats();
+    }
+
+
+    public void print(Report report) {
+
 
         System.out.println("Jacoco Report for: " + report.getName());
 
-        if (options.isPringGlobalStats()) {
+        if (printGlobalStats) {
             packageGlobalStats(report);
         }
 
-        if (options.isPringPackageStats()) {
+        if (printPackageStats) {
             packageStats(report);
         }
     }
@@ -39,15 +51,18 @@ public class ReportPrinter {
             final CounterResult instructions = CounterResultFactory.getCounter(pack.getCounters(), "INSTRUCTION");
             final CounterResult branches = CounterResultFactory.getCounter(pack.getCounters(), "BRANCH");
 
+            final Status instructionStatus = getStatus(instructions);
+            final Status branchStatus = getStatus(branches);
+
             data[i] = new String[]{
                     name,
                     classCount,
-                    instructions.getItems(),
-                    instructions.getItemsCovered(),
-                    instructions.getItemsPercent(),
-                    branches.getItems(),
-                    branches.getItemsCovered(),
-                    branches.getItemsPercent()
+                    colorize(instructionStatus, instructions.getItems()),
+                    colorize(instructionStatus, instructions.getItemsCovered()),
+                    colorize(instructionStatus, instructions.getItemsPercent()),
+                    colorize(branchStatus, branches.getItems()),
+                    colorize(branchStatus, branches.getItemsCovered()),
+                    colorize(branchStatus, branches.getItemsPercent()),
             };
         }
 
@@ -61,15 +76,54 @@ public class ReportPrinter {
         final CounterResult instructions = CounterResultFactory.getCounter(report.getCounters(), "INSTRUCTION");
         final CounterResult branches = CounterResultFactory.getCounter(report.getCounters(), "BRANCH");
 
+        final Status instructionStatus = getStatus(instructions);
+        final Status branchStatus = getStatus(branches);
+
         data[0] = new String[]{
-                instructions.getItems(),
-                instructions.getItemsCovered(),
-                instructions.getItemsPercent(),
-                branches.getItems(),
-                branches.getItemsCovered(),
-                branches.getItemsPercent()
+                colorize(instructionStatus, instructions.getItems()),
+                colorize(instructionStatus, instructions.getItemsCovered()),
+                colorize(instructionStatus, instructions.getItemsPercent()),
+                colorize(branchStatus, branches.getItems()),
+                colorize(branchStatus, branches.getItemsCovered()),
+                colorize(branchStatus, branches.getItemsPercent()),
         };
 
         System.out.println(FlipTable.of(header, data));
+    }
+
+
+    private String colorize(Status status, String text) {
+        switch (status) {
+
+            case GOOD:
+                return colorizer.green(text);
+            case AVERAGE:
+                return colorizer.blue(text);
+            case BAD:
+                return colorizer.red(text);
+            default:
+                return text;
+        }
+    }
+
+    private Status getStatus(CounterResult result) {
+        final double value = result.getItemsPercentRaw();
+
+        if (value >= 66) {
+            return Status.GOOD;
+        } else if (value >= 33) {
+            return Status.AVERAGE;
+        } else if (value >= 0) {
+            return Status.BAD;
+        } else {
+            return Status.NOT_APPLICABLE;
+        }
+    }
+
+    private enum Status {
+        GOOD,
+        AVERAGE,
+        BAD,
+        NOT_APPLICABLE
     }
 }
