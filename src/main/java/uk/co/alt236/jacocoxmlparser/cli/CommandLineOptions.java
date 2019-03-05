@@ -14,12 +14,15 @@ public class CommandLineOptions {
         return commandLine.getOptionValue(OptionsBuilder.ARG_FILE_LONG);
     }
 
-    public boolean isPringPackageStats() {
+    public boolean isPrintPackageStats() {
         return commandLine.hasOption(OptionsBuilder.ARG_PRINT_PACKAGE_STATS_LONG);
     }
 
-    public boolean isPringGlobalStats() {
+    public boolean isPrintGlobalStats() {
         return commandLine.hasOption(OptionsBuilder.ARG_PRINT_GLOBAL_STATS_LONG);
     }
 
+    public boolean isColorise() {
+        return commandLine.hasOption(OptionsBuilder.ARG_COLORISE);
+    }
 }

@@ -11,6 +11,6 @@ class JacocoXmlParser {
 
     void parse(CommandLineOptions options, File jacocoFile) throws Exception {
         final Report report = new ReportParser().parseReport(jacocoFile);
-        new ReportPrinter().print(options, report);
+        new ReportPrinter(options).print(report);
     }
 }

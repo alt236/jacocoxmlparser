@@ -7,17 +7,20 @@ class CounterResult {
     private final String items;
     private final String itemsCovered;
     private final String itemsPercent;
+    private final double itemPercentRaw;
 
     CounterResult(Counter counter) {
         items = String.valueOf(counter.getTotal());
         itemsCovered = String.valueOf(counter.getCovered());
-        itemsPercent = toPercentage(counter.getPercentage());
+        itemPercentRaw = Math.floor(counter.getPercentage());
+        itemsPercent = toPercentage(itemPercentRaw);
     }
 
     CounterResult() {
         items = NO_DATA;
         itemsCovered = NO_DATA;
         itemsPercent = NO_DATA;
+        itemPercentRaw = -1;
     }
 
     public String getItems() {
@@ -32,7 +35,11 @@ class CounterResult {
         return itemsPercent;
     }
 
+    public double getItemsPercentRaw() {
+        return itemPercentRaw;
+    }
+
     private String toPercentage(double amount) {
-        return String.format("%.0f", Math.floor(amount)) + "%";
+        return String.format("%.0f", amount) + "%";
     }
 }

@@ -11,10 +11,12 @@ public class OptionsBuilder {
     /*package*/ static final String ARG_FILE_LONG = "input";
 
     /*package*/ static final String ARG_PRINT_PACKAGE_STATS = "p";
-    /*package*/ static final String ARG_PRINT_PACKAGE_STATS_LONG = "package";
+    /*package*/ static final String ARG_PRINT_PACKAGE_STATS_LONG = "package-stats";
 
     /*package*/ static final String ARG_PRINT_GLOBAL_STATS = "g";
-    /*package*/ static final String ARG_PRINT_GLOBAL_STATS_LONG = "global";
+    /*package*/ static final String ARG_PRINT_GLOBAL_STATS_LONG = "global-stats";
+
+    /*package*/ static final String ARG_COLORISE = "color";
 
     private final Strings strings;
 
@@ -31,6 +33,7 @@ public class OptionsBuilder {
         outputTypeGroup.setRequired(true);
 
         options.addOption(createOptionFile());
+        options.addOption(createOptionColorise());
         options.addOptionGroup(outputTypeGroup);
 
         return options;
@@ -62,6 +65,16 @@ public class OptionsBuilder {
         final String desc = strings.getString("cli_cmd_print_package_stats");
         return Option.builder(ARG_PRINT_PACKAGE_STATS)
                 .longOpt(ARG_PRINT_PACKAGE_STATS_LONG)
+                .hasArg(false)
+                .required(false)
+                .desc(desc)
+                .build();
+    }
+
+    private Option createOptionColorise() {
+        final String desc = strings.getString("cli_cmd_colorise");
+        return Option.builder()
+                .longOpt(ARG_COLORISE)
                 .hasArg(false)
                 .required(false)
                 .desc(desc)
