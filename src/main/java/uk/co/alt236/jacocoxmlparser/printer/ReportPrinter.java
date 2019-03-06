@@ -1,10 +1,12 @@
 package uk.co.alt236.jacocoxmlparser.printer;
 
-import com.jakewharton.fliptables.FlipTable;
 import uk.co.alt236.jacocoxmlparser.cli.CommandLineOptions;
+import uk.co.alt236.jacocoxmlparser.printer.table.CliTable;
+import uk.co.alt236.jacocoxmlparser.printer.table.Line;
 import uk.co.alt236.jacocoxmlparser.xml.Package;
 import uk.co.alt236.jacocoxmlparser.xml.Report;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ReportPrinter {
@@ -38,13 +40,10 @@ public class ReportPrinter {
         final List<Package> packages = report.getPackages();
         packages.sort((o1, o2) -> o1.getName().compareToIgnoreCase(o2.getName()));
 
+        final Line header = Line.fromStrings("Package", "Classes", "Instructions", "Instr. Covered", "Instr. %", "Branches", "Branches Covered", "Branches %");
+        final List<Line> lines = new ArrayList<>();
 
-        final String[] header = {"Package", "Classes", "Instructions", "Instr. Covered", "Instr. %", "Branches", "Branches Covered", "Branches %"};
-        final String[][] data = new String[report.getPackages().size()][header.length];
-
-        for (int i = 0; i < packages.size(); i++) {
-            final Package pack = packages.get(i);
-
+        for (final Package pack : packages) {
             final String name = pack.getName();
             final String classCount = String.valueOf(pack.getClasses().size());
 
@@ -54,7 +53,7 @@ public class ReportPrinter {
             final Status instructionStatus = getStatus(instructions);
             final Status branchStatus = getStatus(branches);
 
-            data[i] = new String[]{
+            final Line line = Line.fromStrings(
                     name,
                     classCount,
                     colorize(instructionStatus, instructions.getItems()),
@@ -62,16 +61,19 @@ public class ReportPrinter {
                     colorize(instructionStatus, instructions.getItemsPercent()),
                     colorize(branchStatus, branches.getItems()),
                     colorize(branchStatus, branches.getItemsCovered()),
-                    colorize(branchStatus, branches.getItemsPercent()),
-            };
+                    colorize(branchStatus, branches.getItemsPercent())
+            );
+
+            lines.add(line);
         }
 
-        System.out.println(FlipTable.of(header, data));
+        System.out.println(CliTable.from(header, lines));
     }
 
     private void packageGlobalStats(Report report) {
-        final String[] header = {"Instructions", "Instr. Covered", "Instr. %", "Branches", "Branches Covered", "Branches %"};
-        final String[][] data = new String[1][header.length];
+
+        final Line header = Line.fromStrings("Instructions", "Instr. Covered", "Instr. %", "Branches", "Branches Covered", "Branches %");
+        final List<Line> lines = new ArrayList<>();
 
         final CounterResult instructions = CounterResultFactory.getCounter(report.getCounters(), "INSTRUCTION");
         final CounterResult branches = CounterResultFactory.getCounter(report.getCounters(), "BRANCH");
@@ -79,16 +81,17 @@ public class ReportPrinter {
         final Status instructionStatus = getStatus(instructions);
         final Status branchStatus = getStatus(branches);
 
-        data[0] = new String[]{
+        final Line line = Line.fromStrings(
                 colorize(instructionStatus, instructions.getItems()),
                 colorize(instructionStatus, instructions.getItemsCovered()),
                 colorize(instructionStatus, instructions.getItemsPercent()),
                 colorize(branchStatus, branches.getItems()),
                 colorize(branchStatus, branches.getItemsCovered()),
-                colorize(branchStatus, branches.getItemsPercent()),
-        };
+                colorize(branchStatus, branches.getItemsPercent())
+        );
 
-        System.out.println(FlipTable.of(header, data));
+        lines.add(line);
+        System.out.println(CliTable.from(header, lines));
     }
 
 
