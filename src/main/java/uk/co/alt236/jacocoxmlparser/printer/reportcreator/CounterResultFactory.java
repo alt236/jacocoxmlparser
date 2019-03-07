@@ -1,4 +1,4 @@
-package uk.co.alt236.jacocoxmlparser.printer;
+package uk.co.alt236.jacocoxmlparser.printer.reportcreator;
 
 import uk.co.alt236.jacocoxmlparser.xml.Counter;
 

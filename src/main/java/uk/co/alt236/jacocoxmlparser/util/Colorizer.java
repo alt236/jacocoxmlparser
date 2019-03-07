@@ -1,7 +1,7 @@
-package uk.co.alt236.jacocoxmlparser.printer;
+package uk.co.alt236.jacocoxmlparser.util;
 
 
-class Colorizer {
+public class Colorizer {
     static final String ANSI_RESET = "\u001B[0m";
     static final String ANSI_BLACK = "\u001B[30m";
     static final String ANSI_RED = "\u001B[31m";
