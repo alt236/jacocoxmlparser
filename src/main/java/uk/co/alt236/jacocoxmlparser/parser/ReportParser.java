@@ -15,16 +15,18 @@ public class ReportParser {
 
 
     public Report parseReport(final File file) throws Exception {
-        JAXBContext jc = JAXBContext.newInstance(Report.class);
+        InputSource inputSource = new InputSource(new FileReader(file));
+        return parseReport(inputSource);
+    }
 
+    public Report parseReport(final InputSource inputSource) throws Exception {
+        JAXBContext jc = JAXBContext.newInstance(Report.class);
         SAXParserFactory spf = SAXParserFactory.newInstance();
         spf.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
         spf.setFeature("http://xml.org/sax/features/validation", false);
 
         XMLReader xmlReader = spf.newSAXParser().getXMLReader();
-        InputSource inputSource = new InputSource(new FileReader(file));
         SAXSource source = new SAXSource(xmlReader, inputSource);
-
         Unmarshaller unmarshaller = jc.createUnmarshaller();
         return (Report) unmarshaller.unmarshal(source);
     }

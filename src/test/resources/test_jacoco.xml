@@ -1,0 +1,1502 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><!DOCTYPE report PUBLIC "-//JACOCO//DTD Report 1.1//EN"
+        "report.dtd">
+<report name="jacocoxmlparser">
+    <sessioninfo id="alex-XPS-13-9370-f85a8659" start="1551978090616" dump="1551978092238"/>
+    <package name="uk/co/alt236/jacocoxmlparser/cli">
+        <class name="uk/co/alt236/jacocoxmlparser/cli/CommandLineOptions" sourcefilename="CommandLineOptions.java">
+            <method name="&lt;init&gt;" desc="(Lorg/apache/commons/cli/CommandLine;)V" line="9">
+                <counter type="INSTRUCTION" missed="6" covered="0"/>
+                <counter type="LINE" missed="3" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="getInputFile" desc="()Ljava/lang/String;" line="14">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="isPrintPackageStats" desc="()Z" line="18">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="isPrintGlobalStats" desc="()Z" line="22">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="isColorise" desc="()Z" line="26">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="26" covered="0"/>
+            <counter type="LINE" missed="7" covered="0"/>
+            <counter type="COMPLEXITY" missed="5" covered="0"/>
+            <counter type="METHOD" missed="5" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/cli/OptionsBuilder" sourcefilename="OptionsBuilder.java">
+            <method name="&lt;init&gt;" desc="(Luk/co/alt236/jacocoxmlparser/resources/Strings;)V" line="23">
+                <counter type="INSTRUCTION" missed="6" covered="0"/>
+                <counter type="LINE" missed="3" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="compileOptions" desc="()Lorg/apache/commons/cli/Options;" line="28">
+                <counter type="INSTRUCTION" missed="37" covered="0"/>
+                <counter type="LINE" missed="9" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="createOptionFile" desc="()Lorg/apache/commons/cli/Option;" line="43">
+                <counter type="INSTRUCTION" missed="16" covered="0"/>
+                <counter type="LINE" missed="7" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="createOptionPrintGlobal" desc="()Lorg/apache/commons/cli/Option;" line="54">
+                <counter type="INSTRUCTION" missed="17" covered="0"/>
+                <counter type="LINE" missed="7" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="createOptionPrintPackage" desc="()Lorg/apache/commons/cli/Option;" line="65">
+                <counter type="INSTRUCTION" missed="17" covered="0"/>
+                <counter type="LINE" missed="7" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="createOptionColorise" desc="()Lorg/apache/commons/cli/Option;" line="75">
+                <counter type="INSTRUCTION" missed="16" covered="0"/>
+                <counter type="LINE" missed="7" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="109" covered="0"/>
+            <counter type="LINE" missed="40" covered="0"/>
+            <counter type="COMPLEXITY" missed="6" covered="0"/>
+            <counter type="METHOD" missed="6" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/cli/JarDetails" sourcefilename="JarDetails.java">
+            <method name="&lt;init&gt;" desc="(Ljava/lang/Class;)V" line="8">
+                <counter type="INSTRUCTION" missed="6" covered="0"/>
+                <counter type="LINE" missed="3" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="getJarVersion" desc="()Ljava/lang/String;" line="13">
+                <counter type="INSTRUCTION" missed="6" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="getJarName" desc="()Ljava/lang/String;" line="18">
+                <counter type="INSTRUCTION" missed="13" covered="0"/>
+                <counter type="LINE" missed="3" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="25" covered="0"/>
+            <counter type="LINE" missed="7" covered="0"/>
+            <counter type="COMPLEXITY" missed="3" covered="0"/>
+            <counter type="METHOD" missed="3" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/cli/CommandHelpPrinter" sourcefilename="CommandHelpPrinter.java">
+            <method name="&lt;init&gt;"
+                    desc="(Luk/co/alt236/jacocoxmlparser/resources/Strings;Luk/co/alt236/jacocoxmlparser/cli/JarDetails;Lorg/apache/commons/cli/Options;)V"
+                    line="17">
+                <counter type="INSTRUCTION" missed="12" covered="0"/>
+                <counter type="LINE" missed="5" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="printHelp" desc="()V" line="24">
+                <counter type="INSTRUCTION" missed="29" covered="0"/>
+                <counter type="LINE" missed="5" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="replacePlaceholders" desc="(Ljava/lang/String;)Ljava/lang/String;" line="32">
+                <counter type="INSTRUCTION" missed="12" covered="0"/>
+                <counter type="LINE" missed="3" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="53" covered="0"/>
+            <counter type="LINE" missed="13" covered="0"/>
+            <counter type="COMPLEXITY" missed="3" covered="0"/>
+            <counter type="METHOD" missed="3" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </class>
+        <sourcefile name="OptionsBuilder.java">
+            <line nr="23" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="24" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="25" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="28" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="30" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="31" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="32" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="33" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="35" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="36" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="37" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="39" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="43" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="44" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="45" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="46" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="47" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="48" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="49" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="54" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="55" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="56" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="57" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="58" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="59" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="60" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="65" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="66" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="67" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="68" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="69" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="70" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="71" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="75" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="76" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="77" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="78" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="79" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="80" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="81" mi="1" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="109" covered="0"/>
+            <counter type="LINE" missed="40" covered="0"/>
+            <counter type="COMPLEXITY" missed="6" covered="0"/>
+            <counter type="METHOD" missed="6" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </sourcefile>
+        <sourcefile name="CommandHelpPrinter.java">
+            <line nr="17" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="18" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="19" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="20" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="21" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="24" mi="7" ci="0" mb="0" cb="0"/>
+            <line nr="25" mi="7" ci="0" mb="0" cb="0"/>
+            <line nr="27" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="28" mi="10" ci="0" mb="0" cb="0"/>
+            <line nr="29" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="32" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="33" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="34" mi="2" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="53" covered="0"/>
+            <counter type="LINE" missed="13" covered="0"/>
+            <counter type="COMPLEXITY" missed="3" covered="0"/>
+            <counter type="METHOD" missed="3" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </sourcefile>
+        <sourcefile name="CommandLineOptions.java">
+            <line nr="9" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="10" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="11" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="14" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="18" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="22" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="26" mi="5" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="26" covered="0"/>
+            <counter type="LINE" missed="7" covered="0"/>
+            <counter type="COMPLEXITY" missed="5" covered="0"/>
+            <counter type="METHOD" missed="5" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </sourcefile>
+        <sourcefile name="JarDetails.java">
+            <line nr="8" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="9" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="10" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="13" mi="6" ci="0" mb="0" cb="0"/>
+            <line nr="18" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="19" mi="6" ci="0" mb="0" cb="0"/>
+            <line nr="20" mi="3" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="25" covered="0"/>
+            <counter type="LINE" missed="7" covered="0"/>
+            <counter type="COMPLEXITY" missed="3" covered="0"/>
+            <counter type="METHOD" missed="3" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </sourcefile>
+        <counter type="INSTRUCTION" missed="213" covered="0"/>
+        <counter type="LINE" missed="67" covered="0"/>
+        <counter type="COMPLEXITY" missed="17" covered="0"/>
+        <counter type="METHOD" missed="17" covered="0"/>
+        <counter type="CLASS" missed="4" covered="0"/>
+    </package>
+    <package name="uk/co/alt236/jacocoxmlparser/printer/reportcreator">
+        <class name="uk/co/alt236/jacocoxmlparser/printer/reportcreator/CounterResult"
+               sourcefilename="CounterResult.java">
+            <method name="&lt;init&gt;" desc="(Luk/co/alt236/jacocoxmlparser/xml/Counter;)V" line="12">
+                <counter type="INSTRUCTION" missed="0" covered="24"/>
+                <counter type="LINE" missed="0" covered="6"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="&lt;init&gt;" desc="()V" line="19">
+                <counter type="INSTRUCTION" missed="0" covered="15"/>
+                <counter type="LINE" missed="0" covered="6"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="getItems" desc="()Ljava/lang/String;" line="27">
+                <counter type="INSTRUCTION" missed="0" covered="3"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="getItemsCovered" desc="()Ljava/lang/String;" line="31">
+                <counter type="INSTRUCTION" missed="0" covered="3"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="getItemsPercent" desc="()Ljava/lang/String;" line="35">
+                <counter type="INSTRUCTION" missed="0" covered="3"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="getItemsPercentRaw" desc="()D" line="39">
+                <counter type="INSTRUCTION" missed="0" covered="3"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="toPercentage" desc="(D)Ljava/lang/String;" line="43">
+                <counter type="INSTRUCTION" missed="0" covered="17"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <counter type="INSTRUCTION" missed="0" covered="68"/>
+            <counter type="LINE" missed="0" covered="17"/>
+            <counter type="COMPLEXITY" missed="0" covered="7"/>
+            <counter type="METHOD" missed="0" covered="7"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/printer/reportcreator/CounterResultFactory"
+               sourcefilename="CounterResultFactory.java">
+            <method name="&lt;init&gt;" desc="()V" line="8">
+                <counter type="INSTRUCTION" missed="3" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="getCounter"
+                    desc="(Ljava/util/List;Ljava/lang/String;)Luk/co/alt236/jacocoxmlparser/printer/reportcreator/CounterResult;"
+                    line="12">
+                <counter type="INSTRUCTION" missed="24" covered="0"/>
+                <counter type="BRANCH" missed="2" covered="0"/>
+                <counter type="LINE" missed="6" covered="0"/>
+                <counter type="COMPLEXITY" missed="2" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="lambda$getCounter$0" desc="(Ljava/lang/String;Luk/co/alt236/jacocoxmlparser/xml/Counter;)Z"
+                    line="14">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="32" covered="0"/>
+            <counter type="BRANCH" missed="2" covered="0"/>
+            <counter type="LINE" missed="7" covered="0"/>
+            <counter type="COMPLEXITY" missed="4" covered="0"/>
+            <counter type="METHOD" missed="3" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/printer/reportcreator/PackageReportCreator"
+               sourcefilename="PackageReportCreator.java">
+            <method name="&lt;init&gt;" desc="(Z)V" line="14">
+                <counter type="INSTRUCTION" missed="4" covered="0"/>
+                <counter type="LINE" missed="2" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="createReport" desc="(Luk/co/alt236/jacocoxmlparser/xml/Report;)Ljava/lang/String;" line="19">
+                <counter type="INSTRUCTION" missed="151" covered="0"/>
+                <counter type="BRANCH" missed="2" covered="0"/>
+                <counter type="LINE" missed="21" covered="0"/>
+                <counter type="COMPLEXITY" missed="2" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="lambda$createReport$0"
+                    desc="(Luk/co/alt236/jacocoxmlparser/xml/Package;Luk/co/alt236/jacocoxmlparser/xml/Package;)I"
+                    line="20">
+                <counter type="INSTRUCTION" missed="6" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="161" covered="0"/>
+            <counter type="BRANCH" missed="2" covered="0"/>
+            <counter type="LINE" missed="23" covered="0"/>
+            <counter type="COMPLEXITY" missed="4" covered="0"/>
+            <counter type="METHOD" missed="3" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/printer/reportcreator/GlobalReportCreator"
+               sourcefilename="GlobalReportCreator.java">
+            <method name="&lt;init&gt;" desc="(Z)V" line="13">
+                <counter type="INSTRUCTION" missed="4" covered="0"/>
+                <counter type="LINE" missed="2" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="createReport" desc="(Luk/co/alt236/jacocoxmlparser/xml/Report;)Ljava/lang/String;" line="19">
+                <counter type="INSTRUCTION" missed="110" covered="0"/>
+                <counter type="LINE" missed="15" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="114" covered="0"/>
+            <counter type="LINE" missed="17" covered="0"/>
+            <counter type="COMPLEXITY" missed="2" covered="0"/>
+            <counter type="METHOD" missed="2" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/printer/reportcreator/ReportCreator$Status"
+               sourcefilename="ReportCreator.java">
+            <method name="&lt;clinit&gt;" desc="()V" line="44">
+                <counter type="INSTRUCTION" missed="44" covered="0"/>
+                <counter type="LINE" missed="5" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="44" covered="0"/>
+            <counter type="LINE" missed="5" covered="0"/>
+            <counter type="COMPLEXITY" missed="1" covered="0"/>
+            <counter type="METHOD" missed="1" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/printer/reportcreator/ReportCreator"
+               sourcefilename="ReportCreator.java">
+            <method name="&lt;init&gt;" desc="(Z)V" line="10">
+                <counter type="INSTRUCTION" missed="9" covered="0"/>
+                <counter type="LINE" missed="3" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="colorize"
+                    desc="(Luk/co/alt236/jacocoxmlparser/printer/reportcreator/ReportCreator$Status;Ljava/lang/String;)Ljava/lang/String;"
+                    line="17">
+                <counter type="INSTRUCTION" missed="22" covered="0"/>
+                <counter type="BRANCH" missed="4" covered="0"/>
+                <counter type="LINE" missed="5" covered="0"/>
+                <counter type="COMPLEXITY" missed="4" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="getStatus"
+                    desc="(Luk/co/alt236/jacocoxmlparser/printer/reportcreator/CounterResult;)Luk/co/alt236/jacocoxmlparser/printer/reportcreator/ReportCreator$Status;"
+                    line="31">
+                <counter type="INSTRUCTION" missed="23" covered="0"/>
+                <counter type="BRANCH" missed="6" covered="0"/>
+                <counter type="LINE" missed="8" covered="0"/>
+                <counter type="COMPLEXITY" missed="4" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="54" covered="0"/>
+            <counter type="BRANCH" missed="10" covered="0"/>
+            <counter type="LINE" missed="16" covered="0"/>
+            <counter type="COMPLEXITY" missed="9" covered="0"/>
+            <counter type="METHOD" missed="3" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </class>
+        <sourcefile name="GlobalReportCreator.java">
+            <line nr="13" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="14" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="19" mi="28" ci="0" mb="0" cb="0"/>
+            <line nr="20" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="22" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="23" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="25" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="26" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="28" mi="9" ci="0" mb="0" cb="0"/>
+            <line nr="29" mi="8" ci="0" mb="0" cb="0"/>
+            <line nr="30" mi="8" ci="0" mb="0" cb="0"/>
+            <line nr="31" mi="8" ci="0" mb="0" cb="0"/>
+            <line nr="32" mi="8" ci="0" mb="0" cb="0"/>
+            <line nr="33" mi="8" ci="0" mb="0" cb="0"/>
+            <line nr="34" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="37" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="39" mi="4" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="114" covered="0"/>
+            <counter type="LINE" missed="17" covered="0"/>
+            <counter type="COMPLEXITY" missed="2" covered="0"/>
+            <counter type="METHOD" missed="2" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </sourcefile>
+        <sourcefile name="ReportCreator.java">
+            <line nr="10" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="11" mi="6" ci="0" mb="0" cb="0"/>
+            <line nr="12" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="17" mi="5" ci="0" mb="4" cb="0"/>
+            <line nr="20" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="22" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="24" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="26" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="31" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="33" mi="4" ci="0" mb="2" cb="0"/>
+            <line nr="34" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="35" mi="4" ci="0" mb="2" cb="0"/>
+            <line nr="36" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="37" mi="4" ci="0" mb="2" cb="0"/>
+            <line nr="38" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="40" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="44" mi="20" ci="0" mb="0" cb="0"/>
+            <line nr="45" mi="6" ci="0" mb="0" cb="0"/>
+            <line nr="46" mi="6" ci="0" mb="0" cb="0"/>
+            <line nr="47" mi="6" ci="0" mb="0" cb="0"/>
+            <line nr="48" mi="6" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="98" covered="0"/>
+            <counter type="BRANCH" missed="10" covered="0"/>
+            <counter type="LINE" missed="21" covered="0"/>
+            <counter type="COMPLEXITY" missed="10" covered="0"/>
+            <counter type="METHOD" missed="4" covered="0"/>
+            <counter type="CLASS" missed="2" covered="0"/>
+        </sourcefile>
+        <sourcefile name="CounterResult.java">
+            <line nr="12" mi="0" ci="2" mb="0" cb="0"/>
+            <line nr="13" mi="0" ci="5" mb="0" cb="0"/>
+            <line nr="14" mi="0" ci="5" mb="0" cb="0"/>
+            <line nr="15" mi="0" ci="5" mb="0" cb="0"/>
+            <line nr="16" mi="0" ci="6" mb="0" cb="0"/>
+            <line nr="17" mi="0" ci="1" mb="0" cb="0"/>
+            <line nr="19" mi="0" ci="2" mb="0" cb="0"/>
+            <line nr="20" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="21" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="22" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="23" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="24" mi="0" ci="1" mb="0" cb="0"/>
+            <line nr="27" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="31" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="35" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="39" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="43" mi="0" ci="17" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="0" covered="68"/>
+            <counter type="LINE" missed="0" covered="17"/>
+            <counter type="COMPLEXITY" missed="0" covered="7"/>
+            <counter type="METHOD" missed="0" covered="7"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </sourcefile>
+        <sourcefile name="CounterResultFactory.java">
+            <line nr="8" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="12" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="13" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="14" mi="6" ci="0" mb="0" cb="0"/>
+            <line nr="15" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="17" mi="12" ci="0" mb="2" cb="0"/>
+            <line nr="19" mi="3" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="32" covered="0"/>
+            <counter type="BRANCH" missed="2" covered="0"/>
+            <counter type="LINE" missed="7" covered="0"/>
+            <counter type="COMPLEXITY" missed="4" covered="0"/>
+            <counter type="METHOD" missed="3" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </sourcefile>
+        <sourcefile name="PackageReportCreator.java">
+            <line nr="14" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="15" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="19" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="20" mi="9" ci="0" mb="0" cb="0"/>
+            <line nr="22" mi="36" ci="0" mb="0" cb="0"/>
+            <line nr="23" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="25" mi="10" ci="0" mb="2" cb="0"/>
+            <line nr="26" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="27" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="29" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="30" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="32" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="33" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="35" mi="17" ci="0" mb="0" cb="0"/>
+            <line nr="38" mi="8" ci="0" mb="0" cb="0"/>
+            <line nr="39" mi="8" ci="0" mb="0" cb="0"/>
+            <line nr="40" mi="8" ci="0" mb="0" cb="0"/>
+            <line nr="41" mi="8" ci="0" mb="0" cb="0"/>
+            <line nr="42" mi="8" ci="0" mb="0" cb="0"/>
+            <line nr="43" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="46" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="47" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="49" mi="4" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="161" covered="0"/>
+            <counter type="BRANCH" missed="2" covered="0"/>
+            <counter type="LINE" missed="23" covered="0"/>
+            <counter type="COMPLEXITY" missed="4" covered="0"/>
+            <counter type="METHOD" missed="3" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </sourcefile>
+        <counter type="INSTRUCTION" missed="405" covered="68"/>
+        <counter type="BRANCH" missed="14" covered="0"/>
+        <counter type="LINE" missed="68" covered="17"/>
+        <counter type="COMPLEXITY" missed="20" covered="7"/>
+        <counter type="METHOD" missed="12" covered="7"/>
+        <counter type="CLASS" missed="5" covered="1"/>
+    </package>
+    <package name="uk/co/alt236/jacocoxmlparser/parser">
+        <class name="uk/co/alt236/jacocoxmlparser/parser/ReportParser" sourcefilename="ReportParser.java">
+            <method name="&lt;init&gt;" desc="()V" line="14">
+                <counter type="INSTRUCTION" missed="0" covered="3"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="parseReport" desc="(Ljava/io/File;)Luk/co/alt236/jacocoxmlparser/xml/Report;" line="18">
+                <counter type="INSTRUCTION" missed="0" covered="12"/>
+                <counter type="LINE" missed="0" covered="2"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="parseReport" desc="(Lorg/xml/sax/InputSource;)Luk/co/alt236/jacocoxmlparser/xml/Report;"
+                    line="23">
+                <counter type="INSTRUCTION" missed="0" covered="36"/>
+                <counter type="LINE" missed="0" covered="8"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <counter type="INSTRUCTION" missed="0" covered="51"/>
+            <counter type="LINE" missed="0" covered="11"/>
+            <counter type="COMPLEXITY" missed="0" covered="3"/>
+            <counter type="METHOD" missed="0" covered="3"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </class>
+        <sourcefile name="ReportParser.java">
+            <line nr="14" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="18" mi="0" ci="8" mb="0" cb="0"/>
+            <line nr="19" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="23" mi="0" ci="8" mb="0" cb="0"/>
+            <line nr="24" mi="0" ci="2" mb="0" cb="0"/>
+            <line nr="25" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="26" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="28" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="29" mi="0" ci="6" mb="0" cb="0"/>
+            <line nr="30" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="31" mi="0" ci="5" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="0" covered="51"/>
+            <counter type="LINE" missed="0" covered="11"/>
+            <counter type="COMPLEXITY" missed="0" covered="3"/>
+            <counter type="METHOD" missed="0" covered="3"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </sourcefile>
+        <counter type="INSTRUCTION" missed="0" covered="51"/>
+        <counter type="LINE" missed="0" covered="11"/>
+        <counter type="COMPLEXITY" missed="0" covered="3"/>
+        <counter type="METHOD" missed="0" covered="3"/>
+        <counter type="CLASS" missed="0" covered="1"/>
+    </package>
+    <package name="uk/co/alt236/jacocoxmlparser/resources">
+        <class name="uk/co/alt236/jacocoxmlparser/resources/Strings" sourcefilename="Strings.java">
+            <method name="&lt;init&gt;" desc="()V" line="11">
+                <counter type="INSTRUCTION" missed="8" covered="0"/>
+                <counter type="LINE" missed="3" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="handleGetObject" desc="(Ljava/lang/String;)Ljava/lang/Object;" line="17">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="getKeys" desc="()Ljava/util/Enumeration;" line="22">
+                <counter type="INSTRUCTION" missed="4" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="getString" desc="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" line="26">
+                <counter type="INSTRUCTION" missed="10" covered="0"/>
+                <counter type="LINE" missed="2" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="27" covered="0"/>
+            <counter type="LINE" missed="7" covered="0"/>
+            <counter type="COMPLEXITY" missed="4" covered="0"/>
+            <counter type="METHOD" missed="4" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </class>
+        <sourcefile name="Strings.java">
+            <line nr="11" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="12" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="13" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="17" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="22" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="26" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="28" mi="6" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="27" covered="0"/>
+            <counter type="LINE" missed="7" covered="0"/>
+            <counter type="COMPLEXITY" missed="4" covered="0"/>
+            <counter type="METHOD" missed="4" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </sourcefile>
+        <counter type="INSTRUCTION" missed="27" covered="0"/>
+        <counter type="LINE" missed="7" covered="0"/>
+        <counter type="COMPLEXITY" missed="4" covered="0"/>
+        <counter type="METHOD" missed="4" covered="0"/>
+        <counter type="CLASS" missed="1" covered="0"/>
+    </package>
+    <package name="uk/co/alt236/jacocoxmlparser/xml">
+        <class name="uk/co/alt236/jacocoxmlparser/xml/Method" sourcefilename="Method.java">
+            <method name="&lt;init&gt;" desc="()V" line="9">
+                <counter type="INSTRUCTION" missed="0" covered="3"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="toString" desc="()Ljava/lang/String;" line="25">
+                <counter type="INSTRUCTION" missed="31" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="31" covered="3"/>
+            <counter type="LINE" missed="1" covered="1"/>
+            <counter type="COMPLEXITY" missed="1" covered="1"/>
+            <counter type="METHOD" missed="1" covered="1"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/xml/Counter" sourcefilename="Counter.java">
+            <method name="&lt;init&gt;" desc="(Ljava/lang/String;II)V" line="25">
+                <counter type="INSTRUCTION" missed="0" covered="12"/>
+                <counter type="LINE" missed="0" covered="5"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="getType" desc="()Ljava/lang/String;" line="33">
+                <counter type="INSTRUCTION" missed="4" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="getMissed" desc="()I" line="37">
+                <counter type="INSTRUCTION" missed="3" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="getCovered" desc="()I" line="41">
+                <counter type="INSTRUCTION" missed="0" covered="3"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="getTotal" desc="()I" line="45">
+                <counter type="INSTRUCTION" missed="0" covered="6"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="getPercentage" desc="()D" line="49">
+                <counter type="INSTRUCTION" missed="0" covered="11"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="toString" desc="()Ljava/lang/String;" line="54">
+                <counter type="INSTRUCTION" missed="24" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="31" covered="32"/>
+            <counter type="LINE" missed="3" covered="8"/>
+            <counter type="COMPLEXITY" missed="3" covered="4"/>
+            <counter type="METHOD" missed="3" covered="4"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/xml/Clazz" sourcefilename="Clazz.java">
+            <method name="&lt;init&gt;" desc="()V" line="10">
+                <counter type="INSTRUCTION" missed="0" covered="3"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="getName" desc="()Ljava/lang/String;" line="23">
+                <counter type="INSTRUCTION" missed="4" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="getMethods" desc="()Ljava/util/List;" line="28">
+                <counter type="INSTRUCTION" missed="4" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="getCounters" desc="()Ljava/util/List;" line="33">
+                <counter type="INSTRUCTION" missed="4" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="toString" desc="()Ljava/lang/String;" line="38">
+                <counter type="INSTRUCTION" missed="19" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="31" covered="3"/>
+            <counter type="LINE" missed="4" covered="1"/>
+            <counter type="COMPLEXITY" missed="4" covered="1"/>
+            <counter type="METHOD" missed="4" covered="1"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/xml/Package" sourcefilename="Package.java">
+            <method name="&lt;init&gt;" desc="()V" line="10">
+                <counter type="INSTRUCTION" missed="0" covered="3"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="getName" desc="()Ljava/lang/String;" line="24">
+                <counter type="INSTRUCTION" missed="4" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="getClasses" desc="()Ljava/util/List;" line="29">
+                <counter type="INSTRUCTION" missed="4" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="getCounters" desc="()Ljava/util/List;" line="34">
+                <counter type="INSTRUCTION" missed="4" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="toString" desc="()Ljava/lang/String;" line="39">
+                <counter type="INSTRUCTION" missed="24" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="36" covered="3"/>
+            <counter type="LINE" missed="4" covered="1"/>
+            <counter type="COMPLEXITY" missed="4" covered="1"/>
+            <counter type="METHOD" missed="4" covered="1"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/xml/Report" sourcefilename="Report.java">
+            <method name="&lt;init&gt;" desc="()V" line="10">
+                <counter type="INSTRUCTION" missed="0" covered="3"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="getName" desc="()Ljava/lang/String;" line="23">
+                <counter type="INSTRUCTION" missed="0" covered="4"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="getPackages" desc="()Ljava/util/List;" line="28">
+                <counter type="INSTRUCTION" missed="4" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="getCounters" desc="()Ljava/util/List;" line="33">
+                <counter type="INSTRUCTION" missed="4" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="toString" desc="()Ljava/lang/String;" line="38">
+                <counter type="INSTRUCTION" missed="24" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="32" covered="7"/>
+            <counter type="LINE" missed="3" covered="2"/>
+            <counter type="COMPLEXITY" missed="3" covered="2"/>
+            <counter type="METHOD" missed="3" covered="2"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/xml/SafeReturn" sourcefilename="SafeReturn.java">
+            <method name="&lt;init&gt;" desc="()V" line="8">
+                <counter type="INSTRUCTION" missed="3" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="safe" desc="(Ljava/lang/String;)Ljava/lang/String;" line="12">
+                <counter type="INSTRUCTION" missed="2" covered="4"/>
+                <counter type="BRANCH" missed="1" covered="1"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="1" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="safe" desc="(Ljava/util/List;)Ljava/util/List;" line="17">
+                <counter type="INSTRUCTION" missed="6" covered="0"/>
+                <counter type="BRANCH" missed="2" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="2" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="11" covered="4"/>
+            <counter type="BRANCH" missed="3" covered="1"/>
+            <counter type="LINE" missed="2" covered="1"/>
+            <counter type="COMPLEXITY" missed="4" covered="1"/>
+            <counter type="METHOD" missed="2" covered="1"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </class>
+        <sourcefile name="Clazz.java">
+            <line nr="10" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="23" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="28" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="33" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="38" mi="19" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="31" covered="3"/>
+            <counter type="LINE" missed="4" covered="1"/>
+            <counter type="COMPLEXITY" missed="4" covered="1"/>
+            <counter type="METHOD" missed="4" covered="1"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </sourcefile>
+        <sourcefile name="Package.java">
+            <line nr="10" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="24" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="29" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="34" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="39" mi="24" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="36" covered="3"/>
+            <counter type="LINE" missed="4" covered="1"/>
+            <counter type="COMPLEXITY" missed="4" covered="1"/>
+            <counter type="METHOD" missed="4" covered="1"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </sourcefile>
+        <sourcefile name="Method.java">
+            <line nr="9" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="25" mi="31" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="31" covered="3"/>
+            <counter type="LINE" missed="1" covered="1"/>
+            <counter type="COMPLEXITY" missed="1" covered="1"/>
+            <counter type="METHOD" missed="1" covered="1"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </sourcefile>
+        <sourcefile name="Counter.java">
+            <line nr="25" mi="0" ci="2" mb="0" cb="0"/>
+            <line nr="26" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="27" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="28" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="29" mi="0" ci="1" mb="0" cb="0"/>
+            <line nr="33" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="37" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="41" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="45" mi="0" ci="6" mb="0" cb="0"/>
+            <line nr="49" mi="0" ci="11" mb="0" cb="0"/>
+            <line nr="54" mi="24" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="31" covered="32"/>
+            <counter type="LINE" missed="3" covered="8"/>
+            <counter type="COMPLEXITY" missed="3" covered="4"/>
+            <counter type="METHOD" missed="3" covered="4"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </sourcefile>
+        <sourcefile name="SafeReturn.java">
+            <line nr="8" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="12" mi="2" ci="4" mb="1" cb="1"/>
+            <line nr="17" mi="6" ci="0" mb="2" cb="0"/>
+            <counter type="INSTRUCTION" missed="11" covered="4"/>
+            <counter type="BRANCH" missed="3" covered="1"/>
+            <counter type="LINE" missed="2" covered="1"/>
+            <counter type="COMPLEXITY" missed="4" covered="1"/>
+            <counter type="METHOD" missed="2" covered="1"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </sourcefile>
+        <sourcefile name="Report.java">
+            <line nr="10" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="23" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="28" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="33" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="38" mi="24" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="32" covered="7"/>
+            <counter type="LINE" missed="3" covered="2"/>
+            <counter type="COMPLEXITY" missed="3" covered="2"/>
+            <counter type="METHOD" missed="3" covered="2"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </sourcefile>
+        <counter type="INSTRUCTION" missed="172" covered="52"/>
+        <counter type="BRANCH" missed="3" covered="1"/>
+        <counter type="LINE" missed="17" covered="14"/>
+        <counter type="COMPLEXITY" missed="19" covered="10"/>
+        <counter type="METHOD" missed="17" covered="10"/>
+        <counter type="CLASS" missed="0" covered="6"/>
+    </package>
+    <package name="uk/co/alt236/jacocoxmlparser/printer">
+        <class name="uk/co/alt236/jacocoxmlparser/printer/ReportPrinter" sourcefilename="ReportPrinter.java">
+            <method name="&lt;init&gt;" desc="(Luk/co/alt236/jacocoxmlparser/cli/CommandLineOptions;)V" line="14">
+                <counter type="INSTRUCTION" missed="0" covered="15"/>
+                <counter type="LINE" missed="0" covered="5"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="print" desc="(Luk/co/alt236/jacocoxmlparser/xml/Report;)V" line="21">
+                <counter type="INSTRUCTION" missed="25" covered="22"/>
+                <counter type="BRANCH" missed="2" covered="2"/>
+                <counter type="LINE" missed="6" covered="4"/>
+                <counter type="COMPLEXITY" missed="2" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <counter type="INSTRUCTION" missed="25" covered="37"/>
+            <counter type="BRANCH" missed="2" covered="2"/>
+            <counter type="LINE" missed="6" covered="9"/>
+            <counter type="COMPLEXITY" missed="2" covered="2"/>
+            <counter type="METHOD" missed="0" covered="2"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </class>
+        <sourcefile name="ReportPrinter.java">
+            <line nr="14" mi="0" ci="2" mb="0" cb="0"/>
+            <line nr="15" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="16" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="17" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="18" mi="0" ci="1" mb="0" cb="0"/>
+            <line nr="21" mi="0" ci="11" mb="0" cb="0"/>
+            <line nr="23" mi="0" ci="3" mb="1" cb="1"/>
+            <line nr="24" mi="8" ci="0" mb="0" cb="0"/>
+            <line nr="25" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="26" mi="1" ci="3" mb="1" cb="1"/>
+            <line nr="27" mi="8" ci="0" mb="0" cb="0"/>
+            <line nr="28" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="29" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="30" mi="0" ci="5" mb="0" cb="0"/>
+            <line nr="32" mi="1" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="25" covered="37"/>
+            <counter type="BRANCH" missed="2" covered="2"/>
+            <counter type="LINE" missed="6" covered="9"/>
+            <counter type="COMPLEXITY" missed="2" covered="2"/>
+            <counter type="METHOD" missed="0" covered="2"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </sourcefile>
+        <counter type="INSTRUCTION" missed="25" covered="37"/>
+        <counter type="BRANCH" missed="2" covered="2"/>
+        <counter type="LINE" missed="6" covered="9"/>
+        <counter type="COMPLEXITY" missed="2" covered="2"/>
+        <counter type="METHOD" missed="0" covered="2"/>
+        <counter type="CLASS" missed="0" covered="1"/>
+    </package>
+    <package name="uk/co/alt236/jacocoxmlparser/printer/table">
+        <class name="uk/co/alt236/jacocoxmlparser/printer/table/ColumnMaxLength" sourcefilename="ColumnMaxLength.java">
+            <method name="&lt;init&gt;" desc="()V" line="5">
+                <counter type="INSTRUCTION" missed="0" covered="3"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="setMaximums" desc="([ILuk/co/alt236/jacocoxmlparser/printer/table/Line;)V" line="8">
+                <counter type="INSTRUCTION" missed="0" covered="23"/>
+                <counter type="BRANCH" missed="0" covered="4"/>
+                <counter type="LINE" missed="0" covered="5"/>
+                <counter type="COMPLEXITY" missed="0" covered="3"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="calculate" desc="(Ljava/util/List;)[I" line="18">
+                <counter type="INSTRUCTION" missed="0" covered="23"/>
+                <counter type="BRANCH" missed="0" covered="2"/>
+                <counter type="LINE" missed="0" covered="5"/>
+                <counter type="COMPLEXITY" missed="0" covered="2"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <counter type="INSTRUCTION" missed="0" covered="49"/>
+            <counter type="BRANCH" missed="0" covered="6"/>
+            <counter type="LINE" missed="0" covered="11"/>
+            <counter type="COMPLEXITY" missed="0" covered="6"/>
+            <counter type="METHOD" missed="0" covered="3"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/printer/table/Line" sourcefilename="Line.java">
+            <method name="&lt;init&gt;" desc="(Ljava/util/List;)V" line="9">
+                <counter type="INSTRUCTION" missed="0" covered="6"/>
+                <counter type="LINE" missed="0" covered="3"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="fromStrings" desc="([Ljava/lang/String;)Luk/co/alt236/jacocoxmlparser/printer/table/Line;"
+                    line="14">
+                <counter type="INSTRUCTION" missed="0" covered="6"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="getItem" desc="(I)Ljava/lang/String;" line="18">
+                <counter type="INSTRUCTION" missed="0" covered="6"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="size" desc="()I" line="22">
+                <counter type="INSTRUCTION" missed="0" covered="4"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <counter type="INSTRUCTION" missed="0" covered="22"/>
+            <counter type="LINE" missed="0" covered="6"/>
+            <counter type="COMPLEXITY" missed="0" covered="4"/>
+            <counter type="METHOD" missed="0" covered="4"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/printer/table/CliTable" sourcefilename="CliTable.java">
+            <method name="&lt;init&gt;" desc="()V" line="5">
+                <counter type="INSTRUCTION" missed="3" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="from"
+                    desc="(Luk/co/alt236/jacocoxmlparser/printer/table/Line;Ljava/util/List;)Ljava/lang/String;"
+                    line="9">
+                <counter type="INSTRUCTION" missed="13" covered="0"/>
+                <counter type="LINE" missed="3" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="validate" desc="(Ljava/util/List;I)V" line="16">
+                <counter type="INSTRUCTION" missed="38" covered="0"/>
+                <counter type="BRANCH" missed="4" covered="0"/>
+                <counter type="LINE" missed="5" covered="0"/>
+                <counter type="COMPLEXITY" missed="3" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="54" covered="0"/>
+            <counter type="BRANCH" missed="4" covered="0"/>
+            <counter type="LINE" missed="9" covered="0"/>
+            <counter type="COMPLEXITY" missed="5" covered="0"/>
+            <counter type="METHOD" missed="3" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/printer/table/TableBuilder" sourcefilename="TableBuilder.java">
+            <method name="&lt;init&gt;" desc="()V" line="10">
+                <counter type="INSTRUCTION" missed="0" covered="3"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="createTable"
+                    desc="(Luk/co/alt236/jacocoxmlparser/printer/table/Line;Ljava/util/List;)Ljava/lang/String;"
+                    line="21">
+                <counter type="INSTRUCTION" missed="0" covered="16"/>
+                <counter type="LINE" missed="0" covered="4"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="createTable" desc="(Ljava/util/List;)Ljava/lang/String;" line="29">
+                <counter type="INSTRUCTION" missed="0" covered="45"/>
+                <counter type="BRANCH" missed="0" covered="4"/>
+                <counter type="LINE" missed="0" covered="10"/>
+                <counter type="COMPLEXITY" missed="0" covered="3"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="addLine"
+                    desc="(Ljava/lang/StringBuilder;[ILuk/co/alt236/jacocoxmlparser/printer/table/Line;)V" line="49">
+                <counter type="INSTRUCTION" missed="0" covered="55"/>
+                <counter type="BRANCH" missed="0" covered="4"/>
+                <counter type="LINE" missed="0" covered="12"/>
+                <counter type="COMPLEXITY" missed="0" covered="3"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="calculatePadSize" desc="(Ljava/lang/String;I)I" line="70">
+                <counter type="INSTRUCTION" missed="7" covered="10"/>
+                <counter type="BRANCH" missed="1" covered="1"/>
+                <counter type="LINE" missed="1" covered="3"/>
+                <counter type="COMPLEXITY" missed="1" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="getSizeOfStringWithoutAsciiColors" desc="(Ljava/lang/String;)I" line="81">
+                <counter type="INSTRUCTION" missed="0" covered="7"/>
+                <counter type="LINE" missed="0" covered="1"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="createHorizontalLine" desc="([I)Ljava/lang/String;" line="85">
+                <counter type="INSTRUCTION" missed="0" covered="25"/>
+                <counter type="LINE" missed="0" covered="3"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <method name="&lt;clinit&gt;" desc="()V" line="11">
+                <counter type="INSTRUCTION" missed="0" covered="8"/>
+                <counter type="LINE" missed="0" covered="2"/>
+                <counter type="COMPLEXITY" missed="0" covered="1"/>
+                <counter type="METHOD" missed="0" covered="1"/>
+            </method>
+            <counter type="INSTRUCTION" missed="7" covered="169"/>
+            <counter type="BRANCH" missed="1" covered="9"/>
+            <counter type="LINE" missed="1" covered="36"/>
+            <counter type="COMPLEXITY" missed="1" covered="12"/>
+            <counter type="METHOD" missed="0" covered="8"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </class>
+        <sourcefile name="Line.java">
+            <line nr="9" mi="0" ci="2" mb="0" cb="0"/>
+            <line nr="10" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="11" mi="0" ci="1" mb="0" cb="0"/>
+            <line nr="14" mi="0" ci="6" mb="0" cb="0"/>
+            <line nr="18" mi="0" ci="6" mb="0" cb="0"/>
+            <line nr="22" mi="0" ci="4" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="0" covered="22"/>
+            <counter type="LINE" missed="0" covered="6"/>
+            <counter type="COMPLEXITY" missed="0" covered="4"/>
+            <counter type="METHOD" missed="0" covered="4"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </sourcefile>
+        <sourcefile name="TableBuilder.java">
+            <line nr="10" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="11" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="12" mi="0" ci="5" mb="0" cb="0"/>
+            <line nr="21" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="22" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="23" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="25" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="29" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="30" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="32" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="34" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="36" mi="0" ci="8" mb="0" cb="2"/>
+            <line nr="37" mi="0" ci="8" mb="0" cb="0"/>
+            <line nr="38" mi="0" ci="2" mb="0" cb="2"/>
+            <line nr="39" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="43" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="45" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="49" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="50" mi="0" ci="8" mb="0" cb="2"/>
+            <line nr="51" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="53" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="54" mi="0" ci="7" mb="0" cb="0"/>
+            <line nr="57" mi="0" ci="2" mb="0" cb="2"/>
+            <line nr="58" mi="0" ci="7" mb="0" cb="0"/>
+            <line nr="60" mi="0" ci="6" mb="0" cb="0"/>
+            <line nr="62" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="63" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="66" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="67" mi="0" ci="1" mb="0" cb="0"/>
+            <line nr="70" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="72" mi="0" ci="4" mb="1" cb="1"/>
+            <line nr="73" mi="7" ci="0" mb="0" cb="0"/>
+            <line nr="75" mi="0" ci="2" mb="0" cb="0"/>
+            <line nr="81" mi="0" ci="7" mb="0" cb="0"/>
+            <line nr="85" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="89" mi="0" ci="9" mb="0" cb="0"/>
+            <line nr="91" mi="0" ci="12" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="7" covered="169"/>
+            <counter type="BRANCH" missed="1" covered="9"/>
+            <counter type="LINE" missed="1" covered="36"/>
+            <counter type="COMPLEXITY" missed="1" covered="12"/>
+            <counter type="METHOD" missed="0" covered="8"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </sourcefile>
+        <sourcefile name="ColumnMaxLength.java">
+            <line nr="5" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="8" mi="0" ci="8" mb="0" cb="2"/>
+            <line nr="9" mi="0" ci="5" mb="0" cb="0"/>
+            <line nr="11" mi="0" ci="5" mb="0" cb="2"/>
+            <line nr="12" mi="0" ci="4" mb="0" cb="0"/>
+            <line nr="15" mi="0" ci="1" mb="0" cb="0"/>
+            <line nr="18" mi="0" ci="7" mb="0" cb="0"/>
+            <line nr="20" mi="0" ci="10" mb="0" cb="2"/>
+            <line nr="21" mi="0" ci="3" mb="0" cb="0"/>
+            <line nr="22" mi="0" ci="1" mb="0" cb="0"/>
+            <line nr="24" mi="0" ci="2" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="0" covered="49"/>
+            <counter type="BRANCH" missed="0" covered="6"/>
+            <counter type="LINE" missed="0" covered="11"/>
+            <counter type="COMPLEXITY" missed="0" covered="6"/>
+            <counter type="METHOD" missed="0" covered="3"/>
+            <counter type="CLASS" missed="0" covered="1"/>
+        </sourcefile>
+        <sourcefile name="CliTable.java">
+            <line nr="5" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="9" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="10" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="11" mi="7" ci="0" mb="0" cb="0"/>
+            <line nr="16" mi="8" ci="0" mb="2" cb="0"/>
+            <line nr="17" mi="6" ci="0" mb="0" cb="0"/>
+            <line nr="18" mi="3" ci="0" mb="2" cb="0"/>
+            <line nr="19" mi="20" ci="0" mb="0" cb="0"/>
+            <line nr="22" mi="1" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="54" covered="0"/>
+            <counter type="BRANCH" missed="4" covered="0"/>
+            <counter type="LINE" missed="9" covered="0"/>
+            <counter type="COMPLEXITY" missed="5" covered="0"/>
+            <counter type="METHOD" missed="3" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </sourcefile>
+        <counter type="INSTRUCTION" missed="61" covered="240"/>
+        <counter type="BRANCH" missed="5" covered="15"/>
+        <counter type="LINE" missed="10" covered="53"/>
+        <counter type="COMPLEXITY" missed="6" covered="22"/>
+        <counter type="METHOD" missed="3" covered="15"/>
+        <counter type="CLASS" missed="1" covered="3"/>
+    </package>
+    <package name="uk/co/alt236/jacocoxmlparser/util">
+        <class name="uk/co/alt236/jacocoxmlparser/util/Colorizer" sourcefilename="Colorizer.java">
+            <method name="&lt;init&gt;" desc="(Z)V" line="19">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="2" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="&lt;init&gt;" desc="(ZZ)V" line="22">
+                <counter type="INSTRUCTION" missed="9" covered="0"/>
+                <counter type="LINE" missed="4" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="isWindows" desc="()Z" line="28">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="error" desc="(Ljava/lang/String;)Ljava/lang/String;" line="32">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="error" desc="(I)Ljava/lang/String;" line="36">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="error" desc="(J)Ljava/lang/String;" line="40">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="error" desc="(Z)Ljava/lang/String;" line="44">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="important" desc="(Ljava/lang/String;)Ljava/lang/String;" line="48">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="important" desc="(I)Ljava/lang/String;" line="52">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="important" desc="(J)Ljava/lang/String;" line="56">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="important" desc="(Z)Ljava/lang/String;" line="60">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="green" desc="(Ljava/lang/String;)Ljava/lang/String;" line="64">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="red" desc="(Ljava/lang/String;)Ljava/lang/String;" line="68">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="yellow" desc="(Ljava/lang/String;)Ljava/lang/String;" line="72">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="blue" desc="(Ljava/lang/String;)Ljava/lang/String;" line="76">
+                <counter type="INSTRUCTION" missed="5" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="colorise" desc="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" line="80">
+                <counter type="INSTRUCTION" missed="19" covered="0"/>
+                <counter type="BRANCH" missed="4" covered="0"/>
+                <counter type="LINE" missed="3" covered="0"/>
+                <counter type="COMPLEXITY" missed="3" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="98" covered="0"/>
+            <counter type="BRANCH" missed="4" covered="0"/>
+            <counter type="LINE" missed="22" covered="0"/>
+            <counter type="COMPLEXITY" missed="18" covered="0"/>
+            <counter type="METHOD" missed="16" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </class>
+        <sourcefile name="Colorizer.java">
+            <line nr="19" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="20" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="22" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="23" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="24" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="25" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="28" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="32" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="36" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="40" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="44" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="48" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="52" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="56" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="60" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="64" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="68" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="72" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="76" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="80" mi="6" ci="0" mb="4" cb="0"/>
+            <line nr="81" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="83" mi="11" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="98" covered="0"/>
+            <counter type="BRANCH" missed="4" covered="0"/>
+            <counter type="LINE" missed="22" covered="0"/>
+            <counter type="COMPLEXITY" missed="18" covered="0"/>
+            <counter type="METHOD" missed="16" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </sourcefile>
+        <counter type="INSTRUCTION" missed="98" covered="0"/>
+        <counter type="BRANCH" missed="4" covered="0"/>
+        <counter type="LINE" missed="22" covered="0"/>
+        <counter type="COMPLEXITY" missed="18" covered="0"/>
+        <counter type="METHOD" missed="16" covered="0"/>
+        <counter type="CLASS" missed="1" covered="0"/>
+    </package>
+    <package name="uk/co/alt236/jacocoxmlparser">
+        <class name="uk/co/alt236/jacocoxmlparser/JacocoXmlParser" sourcefilename="JacocoXmlParser.java">
+            <method name="&lt;init&gt;" desc="()V" line="10">
+                <counter type="INSTRUCTION" missed="3" covered="0"/>
+                <counter type="LINE" missed="1" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="parse" desc="(Luk/co/alt236/jacocoxmlparser/cli/CommandLineOptions;Ljava/io/File;)V"
+                    line="13">
+                <counter type="INSTRUCTION" missed="13" covered="0"/>
+                <counter type="LINE" missed="3" covered="0"/>
+                <counter type="COMPLEXITY" missed="1" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="16" covered="0"/>
+            <counter type="LINE" missed="4" covered="0"/>
+            <counter type="COMPLEXITY" missed="2" covered="0"/>
+            <counter type="METHOD" missed="2" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </class>
+        <class name="uk/co/alt236/jacocoxmlparser/Main" sourcefilename="Main.java">
+            <method name="main" desc="([Ljava/lang/String;)V" line="19">
+                <counter type="INSTRUCTION" missed="21" covered="0"/>
+                <counter type="BRANCH" missed="2" covered="0"/>
+                <counter type="LINE" missed="6" covered="0"/>
+                <counter type="COMPLEXITY" missed="2" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="parseArgs"
+                    desc="(Luk/co/alt236/jacocoxmlparser/resources/Strings;[Ljava/lang/String;)Luk/co/alt236/jacocoxmlparser/cli/CommandLineOptions;"
+                    line="30">
+                <counter type="INSTRUCTION" missed="52" covered="0"/>
+                <counter type="BRANCH" missed="2" covered="0"/>
+                <counter type="LINE" missed="16" covered="0"/>
+                <counter type="COMPLEXITY" missed="2" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <method name="getFile" desc="(Ljava/lang/String;)Ljava/io/File;" line="56">
+                <counter type="INSTRUCTION" missed="37" covered="0"/>
+                <counter type="BRANCH" missed="4" covered="0"/>
+                <counter type="LINE" missed="8" covered="0"/>
+                <counter type="COMPLEXITY" missed="3" covered="0"/>
+                <counter type="METHOD" missed="1" covered="0"/>
+            </method>
+            <counter type="INSTRUCTION" missed="110" covered="0"/>
+            <counter type="BRANCH" missed="8" covered="0"/>
+            <counter type="LINE" missed="30" covered="0"/>
+            <counter type="COMPLEXITY" missed="7" covered="0"/>
+            <counter type="METHOD" missed="3" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </class>
+        <sourcefile name="JacocoXmlParser.java">
+            <line nr="10" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="13" mi="6" ci="0" mb="0" cb="0"/>
+            <line nr="14" mi="6" ci="0" mb="0" cb="0"/>
+            <line nr="15" mi="1" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="16" covered="0"/>
+            <counter type="LINE" missed="4" covered="0"/>
+            <counter type="COMPLEXITY" missed="2" covered="0"/>
+            <counter type="METHOD" missed="2" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </sourcefile>
+        <sourcefile name="Main.java">
+            <line nr="19" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="20" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="22" mi="2" ci="0" mb="2" cb="0"/>
+            <line nr="24" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="25" mi="6" ci="0" mb="0" cb="0"/>
+            <line nr="27" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="30" mi="4" ci="0" mb="0" cb="0"/>
+            <line nr="31" mi="6" ci="0" mb="0" cb="0"/>
+            <line nr="34" mi="3" ci="0" mb="2" cb="0"/>
+            <line nr="35" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="36" mi="7" ci="0" mb="0" cb="0"/>
+            <line nr="37" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="38" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="39" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="42" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="43" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="44" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="45" mi="3" ci="0" mb="0" cb="0"/>
+            <line nr="46" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="47" mi="1" ci="0" mb="0" cb="0"/>
+            <line nr="49" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="52" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="56" mi="5" ci="0" mb="0" cb="0"/>
+            <line nr="58" mi="3" ci="0" mb="2" cb="0"/>
+            <line nr="59" mi="10" ci="0" mb="0" cb="0"/>
+            <line nr="60" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="63" mi="3" ci="0" mb="2" cb="0"/>
+            <line nr="64" mi="10" ci="0" mb="0" cb="0"/>
+            <line nr="65" mi="2" ci="0" mb="0" cb="0"/>
+            <line nr="68" mi="2" ci="0" mb="0" cb="0"/>
+            <counter type="INSTRUCTION" missed="110" covered="0"/>
+            <counter type="BRANCH" missed="8" covered="0"/>
+            <counter type="LINE" missed="30" covered="0"/>
+            <counter type="COMPLEXITY" missed="7" covered="0"/>
+            <counter type="METHOD" missed="3" covered="0"/>
+            <counter type="CLASS" missed="1" covered="0"/>
+        </sourcefile>
+        <counter type="INSTRUCTION" missed="126" covered="0"/>
+        <counter type="BRANCH" missed="8" covered="0"/>
+        <counter type="LINE" missed="34" covered="0"/>
+        <counter type="COMPLEXITY" missed="9" covered="0"/>
+        <counter type="METHOD" missed="5" covered="0"/>
+        <counter type="CLASS" missed="2" covered="0"/>
+    </package>
+    <counter type="INSTRUCTION" missed="1127" covered="448"/>
+    <counter type="BRANCH" missed="36" covered="18"/>
+    <counter type="LINE" missed="231" covered="104"/>
+    <counter type="COMPLEXITY" missed="95" covered="44"/>
+    <counter type="METHOD" missed="74" covered="37"/>
+    <counter type="CLASS" missed="14" covered="12"/>
+</report>

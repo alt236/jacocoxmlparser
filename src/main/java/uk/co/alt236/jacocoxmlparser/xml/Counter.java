@@ -16,6 +16,18 @@ public class Counter {
     @XmlAttribute(name = "covered")
     private int covered;
 
+    private Counter() {
+        // NOOP - Here to allow binding
+    }
+
+    public Counter(final String type,
+                   final int covered,
+                   final int missed) {
+        this.type = type;
+        this.covered = covered;
+        this.missed = missed;
+    }
+
     @Nonnull
     public String getType() {
         return SafeReturn.safe(type);
